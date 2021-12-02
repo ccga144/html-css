@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 152, 152);
+}
+
+div#introducao{
+    max-width: 600px;
+    margin: 0px auto;
+    background-color: green;
+    padding: 50px 15px;
+
+}
+
+p{
+    margin-bottom: 10px;
+    line-height: 15pt;
+    text-indent: 20pt;
+}
+
+div#livros img{
+    max-height: 290px;
+    max-width: 250px;
+    display: block;
+    margin: 0px 10px 10px 0px;
+    cursor: pointer;
+
+}
+
+
+div#sublivros > div#livros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+div#sublivros{
+    background-color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div#sublivros > div#name{
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header{
+    height: 100px;
+    background: linear-gradient(to right, rgb(12, 12, 12), rgb(36, 36, 36));
+    position: relative;
+}
+
+header > div#texto{
+    position: absolute;
+    font-size: 20pt;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+div#videos{
+    max-width: 1500px;
+    display: block;
+    margin: auto;
+    background-color: white;
+    padding-top: 20px;
+}
+
+div#clipes{
+    background: rgb(207, 255, 179);
+    display: block;
+    padding: 10px 0px 0px 0px;
+}
+
+div#clipes > div#texto{
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+div#videos > div#videos-iframe, div#clipes > div#os-clipes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div#videos > div#texto{
+    text-align: center;
+    font-size: 20pt;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+iframe{
+    max-width: 100%;
+    margin: 5px;
+}
