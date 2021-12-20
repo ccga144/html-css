@@ -22,6 +22,7 @@
 
         table{
             border-collapse: collapse;
+            max-width: 100%;
         }
 
         thead th{
@@ -42,12 +43,24 @@
             text-align: center;
         }
 
-        
+        table.dois{
+            display: none;
+        }
+
+        @media(max-width: 505px){
+            table.dois{
+                display: block;
+            }
+
+            table.um{
+                display: none;
+            }
+        }
 
         </style>
 </head>
 <body>
-    <table>
+    <table class="um">
         <thead>
             <caption class="fundo">Notas 2021</caption>
         </thead>
@@ -171,6 +184,174 @@
             </tr>
             <tr class="fundo">
                 <th colspan="7" class="uncentro fundo">Média da etapa:</th>
+                <td>9.8</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="dois">
+        <thead>
+            <caption class="fundo">Notas 2021</caption>
+        </thead>
+        <tbody>
+            <tr class="fundo">
+                <th rowspan="3">Disciplina</th>
+                <th colspan="3">Etapa</th>
+                <th rowspan="3">Média</th>
+            </tr>
+            <tr class="fundo">
+                <th colspan="3">1ª Etapa</th>
+            </tr>
+            <tr class="fundo">
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+            </tr>
+            <tr>
+                <td class="uncentro">Ciências</td>
+                <td>10.0</td>
+                <td>9.0</td>
+                <td>10.0</td>
+                <td>9.8</td>
+            </tr>
+            <tr>
+                <td class="uncentro">Educação Física</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td class="uncentro">Geografia</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td class="uncentro">História</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td class="uncentro">Leitura e Análise Linguística</td>
+                <td>8.0</td>
+                <td>9.3</td>
+                <td>9.6</td>
+                <td>9.4</td>
+            </tr>
+            <tr>
+                <td class="uncentro">Inglês</td>
+                <td>9.6</td>
+                <td>9.8</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+               <td class="uncentro">Matemática</td> 
+               <td>10.0</td>
+               <td>10.0</td>
+               <td>10.0</td>
+               <td>9.8</td>
+            </tr>
+            <tr>
+                <td class="uncentro">Produção Textual</td>
+                <td>10.0</td>
+                <td>8,5</td>
+                <td>10.0</td>
+                <td>9.8</td>
+            </tr>
+            <tr>
+                <td class="uncentro">Música</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td class="uncentro">Artes</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>9.8</td>
+            </tr>
+            <tr class="fundo">
+                <th rowspan="3">Disciplina</th>
+                <th colspan="3">Etapa</th>
+                <th rowspan="13" style="background-color: white;"></th>
+            </tr>
+            <tr class="fundo">
+                <th colspan="3">2ª Etapa</th>
+            </tr>
+            <tr class="fundo">
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+            </tr>
+
+            <tr>
+                <td>Ciências</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Educação Física</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>9.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>História</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Leitura e Análise Linguística</td>
+                <td>10.0</td>
+                <td>9.8</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Inglês</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Matemática</td>
+                <td>9.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Produção Textual</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Música</td>
+                <td>10.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr>
+                <td>Artes</td>
+                <td>9.0</td>
+                <td>10.0</td>
+                <td>10.0</td>
+            </tr>
+            <tr class="fundo">
+                <th colspan="4" class="uncentro fundo">Média anual:</th>
                 <td>9.8</td>
             </tr>
         </tbody>
